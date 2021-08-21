@@ -1,10 +1,8 @@
 
 import './App.css';
-import Header from './components/Header';
 import Hero from './components/Hero';
 import './components/Hero.css';
-import Navbar from './components/Navbar';
-import Profile from './components/Profile';
+
 
 const heroesJSON = `[{
   "name": "Бэтмен",
@@ -113,11 +111,6 @@ const heroesJSON = `[{
 function App() {
   return (
     <div className="app-wrapper">
-      
-      
-      {/* <Header/>
-      <Navbar/>
-      <Profile/> */}
 
       {heroes.map((hero)=>
       <Hero name={hero.name} image={hero.image} universe={hero.universe} alterEgo={hero.alterEgo} activity={hero.activity} friends={hero.friends} superPowers={hero.superPowers} moreInfo={hero.moreInfo}/>
